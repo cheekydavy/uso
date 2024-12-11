@@ -14,7 +14,7 @@
                 password: document.getElementById('signupPassword').value
             };
 
-            fetch('YOUR_GOOGLE_APPS_SCRIPT_URL', {
+            fetch('https://script.google.com/macros/s/AKfycbxWmtK9RYKrSVrK3mLekGySg6WVzQaCiAF89iznDKtajoaYo-310awWW2qTiMzpV9-W/exec', {
                 method: 'POST',
                 body: JSON.stringify(formData),
                 headers: {
@@ -37,6 +37,7 @@
 </head>
 <body>
     <form onsubmit="submitSignupForm(event)">
+        <h2>Sign Up</h2>
         <label for="signupEmail">Email:</label>
         <input type="email" id="signupEmail" required>
         <br>
@@ -44,6 +45,10 @@
         <input type="password" id="signupPassword" required>
         <br>
         <input type="submit" value="Sign Up">
+        <br>
+        <p>
+            Already have an account? <a href="login.html">Log in here</a>.
+        </p>
     </form>
 </body>
 </html>
