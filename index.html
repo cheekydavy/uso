@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Signup Form</title>
     <script>
         function submitSignupForm(e) {
             e.preventDefault(); // Prevent the default form submission
@@ -25,7 +25,7 @@
             .then(data => {
                 alert(data.message);
                 if (data.status === 'success') {
-                    // Optionally redirect to login page or clear the form
+                    // Optionally redirect to another page or clear the form
                 }
             })
             .catch((error) => {
