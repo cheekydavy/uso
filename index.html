@@ -5,15 +5,15 @@
     <script>
       function AddRow()
     {
-      var usernamee = document.getElementById("usernamee").value;
-      var passwordd = document.getElementById("passwordd").value;
+      var usernamee = document.getElementById("username").value;
+      var passwordd = document.getElementById("password").value;
       var email = document.getElementById("email").value;
       var phone = document.getElementById("phone").value;
-      if (usernamee==""|| passwordd==""|| email==""|| phone=="") {
+      if (username==""|| password==""|| email==""|| phone=="") {
         return false;
       }
       else {
-      google.script.run.AddRecord(usernamee,passwordd,email,phone);
+      google.script.run.AddRecord(username,password,email,phone);
       document.getElementById("page2_id1").className = "page2_id1-off";
       document.getElementById("page3_id1").className = "page3_id1";
      }
