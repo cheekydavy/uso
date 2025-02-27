@@ -466,8 +466,8 @@ html {
   .introtext {
     position: absolute;
     color: #a4d3df;
-    bottom: 1rem;
-    width: 90%;
+    width: 100%;
+    margin-top: 2rem;
   }
   .introtext h1 {
     font-size: 1.5rem;
