@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color: #7fc9d3;
+  --black: #13131a;
+  --bg: rgb(0, 255, 255);
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: none;
+  padding: 1rem;
+  width: auto;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.homeimage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+.homeimage img {
+  width: 100%;
+  height: 100%;
+}
+
+.hometext {
+  bottom: 3rem;
+  position: absolute;
+  color: aqua;
+  font-size: 4rem;
+}
+.more {
+  display: flex;
+  padding: 4rem 0rem 4rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #13131a;
+  color: #fff;
+}
+
+.welcomeimage {
+  height: 40rem;
+  width: 50%;
+}
+
+.welcomeimage img {
+  height: 100%;
+  width: 100%;
+}
+
+.welcometext {
+  width: 45%;
+}
+
+.welcometext h1 {
+  font-size: 3.5rem;
+}
+
+.more2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+  background: #13131a;
+  color: #fff;
+}
+
+.introimage {
+  height: 40rem;
+  width: 80rem;
+}
+
+.introimage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+.introtext {
+  width: 40rem;
+  padding: 3rem;
+}
+.introtext h1 {
+  font-size: 3rem;
+}
+.about {
+  background-color: #13131a;
+  color: #fff;
+}
+.aboutimage {
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+
+.aboutimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutintro {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgb(29, 29, 29),
+    rgba(49, 48, 48, 0.507),
+    rgba(70, 70, 70, 0.062)
+  );
+  display: flex;
+  align-items: end;
+}
+.abouttext {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem 5rem;
+}
+.vision,
+.mission {
+  position: relative;
+}
+.vision h1,
+.mission h1 {
+  color: #13131a;
+  width: 15rem;
+  height: 15rem;
+  background-color: hsl(170, 93%, 55%);
+  background-image: linear-gradient(
+    rgb(11, 165, 106),
+    #00ffb3,
+    rgb(110, 108, 108)
+  );
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.vision p,
+.mission p {
+  position: absolute;
+  width: 25rem;
+  bottom: 1rem;
+  margin-left: 4rem;
+}
+.moodboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #13131a;
+}
+.moodimage {
+  height: 40rem;
+  width: 50%;
+}
+.moodimage img {
+  height: 100%;
+  height: 100%;
+}
+.moodtext {
+  color: #fff;
+  padding: 5rem;
+}
+#operation {
+  background: #13131a;
+}
+.operation {
+  width: 100%;
+  background: #13131a;
+  color: #fff;
+}
+.opintro {
+  padding: 3rem 1rem;
+}
+.operation h1 {
+  font-size: 5rem;
+}
+.operationcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.engage {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(11, 165, 106),
+    #00ffb3,
+    rgba(255, 255, 255, 0.534)
+  );
+  margin: 3rem;
+}
+.engagetext {
+  position: absolute;
+  top: 12rem;
+  padding-left: 3rem;
+}
+.engage h1 {
+  position: absolute;
+  text-align: center;
+  top: 5rem;
+  left: 5rem;
+}
+.doingthings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+  background: #fff;
+  color: #13131a;
+}
+.doingimg {
+  height: 40rem;
+  width: 50%;
+  margin-top: 5rem;
+}
+.doingimg img {
+  height: 100%;
+  width: 100%;
+}
+.doingtext {
+  margin-top: 10rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13131a;
+  color: #fff;
+  padding: 5rem;
+}
+
+.contacttext1 {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(11, 165, 106),
+    #00ffb3,
+    rgba(255, 255, 255, 0.534)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  position: relative;
+}
+.contacttext1 h1 {
+  position: absolute;
+  padding-right: 10rem;
+}
+
+.contacttext2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10rem;
+  line-height: 50px;
+}
+
+.contacttext2 h4 {
+  color: #00ffb3;
+}
+
+.footer {
+  padding: 70px 0;
+  background-color: #24262b;
+  box-sizing: border-box;
+}
+
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 15px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 10px 0;
+}
+
+.footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #19e0e0c7;
+}
+
+.footer .social-media {
+  display: flex;
+  align-items: center;
+}
+
+.footer .social-media a {
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer .social-media a:hover {
+  color: #33f1e8;
+}
+@media (max-width: 740px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+  .navbar-menu a:hover {
+    color: #33f1e8;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    width: 5rem;
+    background: #13131a;
+  }
+  .homeimage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .homeimage img {
+    object-fit: cover;
+  }
+  .hometext {
+    position: absolute;
+    top: 10rem;
+    font-size: 1rem;
+  }
+  .hometext p {
+    font-size: 1.2rem;
+    width: 34ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(25) infinite alternate-reverse;
+  }
+  @keyframes typing {
+    from {
+      width: 0ch;
+    }
+  }
+  .year {
+    display: none;
+  }
+  .more {
+    display: flex;
+    flex-direction: column;
+    background-color: #13131a;
+    color: #fff;
+  }
+  .welcomeimage {
+    height: 20rem;
+    width: 100%;
+  }
+  .welcomeimage img {
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  .welcometext {
+    width: 100%;
+  }
+  .welcometext h1 {
+    font-size: 1.5rem;
+  }
+  .more2 {
+    background-color: #13131a;
+    color: aliceblue;
+    position: relative;
+  }
+  .introimage {
+    height: 20rem;
+    width: 100%;
+  }
+  .introimage img {
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  .overlay {
+    background: linear-gradient(
+      rgba(49, 49, 49, 0.034),
+      rgba(75, 74, 74, 0),
+      black
+    );
+  }
+  .introtext {
+    position: absolute;
+    color: #a4d3df;
+    bottom: 1rem;
+    margin-left: 3.5rem;
+    width: 90%;
+  }
+  .introtext h1 {
+    font-size: 1.5rem;
+  }
+  .abouttext {
+    width: 80%;
+    background-color: #13131a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision,
+  .mission {
+    padding-bottom: 6rem;
+  }
+  .vision h1,
+  .mission h1 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  .vision p,
+  .mission p {
+    width: 20rem;
+    margin-left: 1rem;
+  }
+  .moodboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .moodimage {
+    width: 100%;
+    height: 100%;
+  }
+  .moodimage img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  .moodtext {
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  .opintro {
+    background: linear-gradient(
+      to top,
+      rgba(32, 32, 32, 0.144),
+      black,
+      rgba(0, 0, 0, 0.507)
+    );
+  }
+  .opintro h1 {
+    font-size: 2.5rem;
+  }
+  .doingthings {
+    display: flex;
+    flex-direction: column;
+    background: #13131a;
+    color: #fff;
+  }
+  .doingimg {
+    width: 100%;
+    height: 100%;
+  }
+  .doingimg img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  .doingtext {
+    width: 100%;
+    padding-top: 0;
+  }
+  .doingtext h1 {
+    font-size: 2.5rem;
+  }
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .contacttext1,
+  .contacttext2 {
+    width: 45%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .contacttext1 {
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .contacttext1 h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contacttext2 {
+    line-height: normal;
+  }
+  .footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    width: 48%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
