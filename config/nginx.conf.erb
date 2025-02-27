@@ -1,0 +1,15 @@
+worker_processes 1;
+
+events {}
+
+http {
+    server {
+        listen 3000;
+
+        location / {
+            root .;
+            index index.html index.htm;
+            try_files $uri $uri/ /index.html;
+        }
+    }
+}
