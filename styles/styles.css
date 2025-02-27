@@ -53,6 +53,9 @@ html {
   color: white;
   text-decoration: none;
 }
+  body {
+    overflow-x: hidden;
+  }
 
 .homeimage {
   position: relative;
