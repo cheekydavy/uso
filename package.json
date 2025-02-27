@@ -1,0 +1,12 @@
+{
+  "name": "u.s.o",
+  "version": "1.0.0",
+  "description": "static website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s ."
+  },
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
